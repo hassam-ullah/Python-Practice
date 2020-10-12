@@ -1,0 +1,15 @@
+import os as osys
+f=open("textfile.txt",'a')
+f.write("\nI am appeing this file")
+f.close()
+
+f=open("textfile.txt")
+print(f.read())
+if osys.path.exists("textfile2.txt"):
+    print(osys.remove("textfile2.txt"))
+if osys.path.exists("textfile3.txt"):
+    osys.remove("textfile3.txt")
+
+
+
+
